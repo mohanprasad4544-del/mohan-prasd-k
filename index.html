@@ -3,113 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohan Prasad | Portfolio</title>
+    <title>Arjun | Professional Portfolio</title>
     <style>
+        /* Global Reset & Typography */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
         }
+
         body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
+            background-color: #0f172a; /* Premium Slate Dark Background */
+            color: #f8fafc;
+            line-height: 1.7;
+            padding-bottom: 3rem;
         }
+
+        /* Header / Hero Section */
         header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 2rem 1rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            padding: 4.5rem 2rem;
             text-align: center;
+            border-bottom: 1px solid #334155;
         }
+
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            color: #f8fafc;
             margin-bottom: 0.5rem;
         }
+
         header p {
-            font-size: 1.1rem;
-            color: #bdc3c7;
+            font-size: 1.2rem;
+            color: #38bdf8; /* Sleek Cyan Accent */
+            font-weight: 500;
         }
+
+        /* Container */
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
         }
-        section {
-            background: #fff;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+
+        /* Profile / About Section */
+        .about-card {
+            background: #1e293b;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            margin-bottom: 2.5rem;
         }
+
         h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 0.5rem;
+            font-size: 1.75rem;
+            color: #f1f5f9;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
+
+        h2::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: #334155;
+            margin-left: 1rem;
+        }
+
+        .about-card p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        /* Master Skills Grid */
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: #1e293b;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #38bdf8;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+        }
+
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 1rem;
-            margin-top: 1rem;
         }
-        .skill-card {
-            background: #ecf0f1;
-            padding: 1rem;
-            border-radius: 4px;
-            text-align: center;
-            font-weight: bold;
-            color: #34495e;
-            transition: transform 0.2s;
+
+        .skill-item {
+            background: #0f172a;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            border: 1px solid #475569;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            transition: all 0.25s ease;
         }
-        .skill-card:hover {
-            transform: translateY(-3px);
-            background: #3498db;
-            color: #fff;
+
+        /* Neat interactive hover effect */
+        .skill-item:hover {
+            border-color: #38bdf8;
+            background: #1e3a8a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
         }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 2rem;
-            color: #7f8c8d;
-            font-size: 0.9rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>Mohan Prasad K</h1>
-        <p>Welcome to my personal portfolio website</p>
+        <h1>Arjun</h1>
+        <p>Technical Automation & Digital Solutions Specialist</p>
     </header>
 
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Mohan Prasad. I am passionate about computer automation, scripting, and exploring digital tech. I enjoy building efficient workflows and continuously expanding my technical skillset.</p>
+        
+        <!-- About Section -->
+        <section class="about-card">
+            <h2>Professional Profile</h2>
+            <p>Results-driven technical professional specializing in system automation, custom scripting infrastructure, and precision digital content optimization. Focused on building clean, high-performance workflows that minimize manual effort and maximize computing efficiency.</p>
         </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Windows Command Prompt</div>
-                <div class="skill-card">Batch Scripting</div>
-                <div class="skill-card">VBScript Automation</div>
-                <div class="skill-card">Digital Image Editing</div>
-                <div class="skill-card">Data Organization</div>
-                <div class="skill-card">Workflow Automation</div>
+        <!-- Master Skills Section -->
+        <section class="skills-container">
+            <h2>Core Competencies</h2>
+
+            <!-- Category 1: Systems & Core Automation -->
+            <div class="skill-category">
+                <div class="category-title">Command Line & Systems</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Windows Command Prompt (CMD)</div>
+                    <div class="skill-item">Advanced Batch Scripting (.bat)</div>
+                    <div class="skill-item">VBScript Automation (.vbs)</div>
+                    <div class="skill-item">System Architecture & Navigation</div>
+                </div>
             </div>
+
+            <!-- Category 2: Automation & Architecture -->
+            <div class="skill-category">
+                <div class="category-title">Workflow Automation</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Automated Folder Management</div>
+                    <div class="skill-item">Looping Script Architectures</div>
+                    <div class="skill-item">Execution Flow Optimization</div>
+                    <div class="skill-item">Text Editor & Notepad Control</div>
+                </div>
+            </div>
+
+            <!-- Category 3: Creative & Media Engineering -->
+            <div class="skill-category">
+                <div class="category-title">Digital Media Processing</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Digital Image Editing</div>
+                    <div class="skill-item">Resolution Upscaling & Clarity</div>
+                    <div class="skill-item">Creative Photo Collaging</div>
+                    <div class="skill-item">Artistic Filtering & Sketch Effects</div>
+                    <div class="skill-item">Custom Graphics & Layout Layouts</div>
+                </div>
+            </div>
+
+            <!-- Category 4: Operational Management -->
+            <div class="skill-category">
+                <div class="category-title">Data & Operations</div>
+                <div class="skills-grid">
+                    <div class="skill-item">Data Classification & Structuring</div>
+                    <div class="skill-item">Event Assets Composition</div>
+                    <div class="skill-item">File Integrity Maintenance</div>
+                </div>
+            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out if you'd like to collaborate on automation projects or tech ideas!</p>
-        </section>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Arjun. Crafted for maximum performance and clarity.</p>
+        </footer>
+
     </div>
-
-    <footer>
-        <p>&copy; 2026 Mohan Prasad K. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
